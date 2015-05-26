@@ -1,0 +1,13 @@
+{
+"name": "gamayun",
+"main": "gamayun.js",
+"version": "0.0.1",
+"description": "A server that serves answers.",
+"keywords": ["question", "questions", "answer", "answers", "ask"],
+"author": { "name": "Mithgol the Webmaster" },
+"license": "MIT",
+"repository": {
+   "type": "git",
+   "url": "https://github.com/Mithgol/node-gamayun.git"
+}
+}
