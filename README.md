@@ -8,6 +8,12 @@ It is designed as a web application for the [Express.js](http://expressjs.com/)
 
 This module is currently in an early phase of its development and thus does not have the desired level of feature completeness.
 
+## Goals
+
+**Long-term goal:** a server where people ask their questions and the user replies (like [Ask.fm](http://ask.fm/) or [Spring.me](http://spring.me/)). Instead of a centralized approach, this should be installable on personal servers (such as [Krylov's answers](http://krylov.cc/fansw.php)).
+
+**Short-term goal:** a server that is able to host answers imported by [the `autumn` package](https://github.com/Mithgol/node-autumn) from [Spring.me](http://spring.me/) servers.
+
 ## Installing Gamayun
 
 [![(npm package version)](https://nodei.co/npm/gamayun.png?downloads=true&downloadRank=true)](https://npmjs.org/package/gamayun)
