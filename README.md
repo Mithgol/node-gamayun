@@ -22,8 +22,6 @@ This module is currently in an early phase of its development and thus does
 
 * Latest githubbed version: `npm install https://github.com/Mithgol/node-gamayun/tarball/master`
 
-The npm package does not contain the tests, they're published on GitHub only.
-
 You may visit https://github.com/Mithgol/node-gamayun#readme occasionally to read the latest `README` because the package's version is not planned to grow after changes when they happen in `README` only. (And `npm publish --force` is [forbidden](http://blog.npmjs.org/post/77758351673/no-more-npm-publish-f) nowadays.)
 
 ## License
