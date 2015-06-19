@@ -24,6 +24,54 @@ This module is currently in an early phase of its development and thus does
 
 You may visit https://github.com/Mithgol/node-gamayun#readme occasionally to read the latest `README` because the package's version is not planned to grow after changes when they happen in `README` only. (And `npm publish --force` is [forbidden](http://blog.npmjs.org/post/77758351673/no-more-npm-publish-f) nowadays.)
 
+## Using Gamayun
+
+When you `require()` the installed module, you get a function that accepts an object of options and returns an Express.js application (Gamayun).
+
+**Example 1. ** You may serve the Gamayun application on a route (path) of your Express-based web server:
+
+```js
+var express = require('express');
+var app = express();
+
+var Gamayun = require('gamayun')(options_for_Gamayun);
+app.use('/gamayun', Gamayun);
+```
+
+**Example 2. ** You may also use the [`vhost`](https://github.com/expressjs/vhost) module to serve the Gamayun application on a virtual host of your Express-based web server:
+
+```js
+var vhost = require('vhost');
+var express = require('express');
+var app = express();
+
+var Gamayun = require('gamayun')(options_for_Gamayun);
+app.use(vhost('gamayun.example.org', Gamayun));
+```
+
+**Example 3. ** You may also directly use the Gamayun application itself as your Express-based web server (if that server's only purpose is Gamayun).
+
+HTTP example:
+
+```js
+require('gamayun')(options_for_Gamayun).listen(80);
+```
+
+HTTPS example:
+
+```js
+var fs = require('fs');
+
+require('https').createServer(
+   {
+      key:   fs.readFileSync('somepath/server.key'),
+      cert:  fs.readFileSync('somepath/server.crt'),
+      honorCipherOrder: true
+   },
+   require('gamayun')(options_for_Gamayun)
+).listen(443);
+```
+
 ## License
 
 MIT license (see the `LICENSE` file).
