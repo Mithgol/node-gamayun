@@ -17,5 +17,8 @@
 },
 "peerDependencies": {
    "express": ">=4.9.0"
+},
+"scripts": {
+   "test": "jshint --verbose gamayun.js"
 }
 }
