@@ -74,6 +74,8 @@ require('https').createServer(
 
 ## Testing Gamayun
 
+[![(build testing status)](https://img.shields.io/travis/Mithgol/node-gamayun/master.svg?style=plastic)](https://travis-ci.org/Mithgol/node-gamayun)
+
 It is necessary to install [JSHint](http://jshint.com/) for testing.
 
 * You may install JSHint globally (`npm install jshint -g`) or locally (`npm install jshint` in the directory of Gamayun).
