@@ -72,6 +72,14 @@ require('https').createServer(
 ).listen(443);
 ```
 
+## Testing Gamayun
+
+It is necessary to install [JSHint](http://jshint.com/) for testing.
+
+* You may install JSHint globally (`npm install jshint -g`) or locally (`npm install jshint` in the directory of Gamayun).
+
+After that you may run `npm test` (in the directory of Gamayun). Only the JS code errors are caught; the code's behaviour is not tested.
+
 ## License
 
 MIT license (see the `LICENSE` file).
