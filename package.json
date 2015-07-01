@@ -19,6 +19,6 @@
    "express": ">=4.9.0"
 },
 "scripts": {
-   "test": "jshint --verbose gamayun.js"
+   "test": "jshint --verbose gamayun.js gyConfig.js"
 }
 }
