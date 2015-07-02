@@ -29,3 +29,9 @@ node_modules
 
 # NPM error logs
 npm-debug.log
+
+# Autumn-specific output
+*.autumn.json
+
+# Project specific
+gamayun.conf

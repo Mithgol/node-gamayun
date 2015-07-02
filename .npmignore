@@ -34,3 +34,9 @@ npm-debug.log
 test
 .gitignore
 .git
+
+# Autumn-specific output
+*.autumn.json
+
+# Project specific
+gamayun.conf
