@@ -11,9 +11,9 @@
    "url": "https://github.com/Mithgol/node-gamayun.git"
 },
 "dependencies": {
-   "extend": "~2.0.1",
+   "extend": "~3.0.0",
    "font-awesome": "~4.3.0",
-   "simteconf": "~0.6.10"
+   "simteconf": "~0.6.12"
 },
 "peerDependencies": {
    "express": ">=4.9.0"
