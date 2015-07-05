@@ -74,6 +74,20 @@ require('https').createServer(
 ).listen(443);
 ```
 
+**Note. ** You should create a configuration file for the installed Gamayun before you use it. (See below.)
+
+## Configuration options
+
+The `options_for_Gamayun` object that is given to Gamayun currently has only one property:
+
+* `configFilePath` — the path to the configuration file. That file contains most of the other configuration options in their text form, one line per option. (By default it is the file `gamayun.conf` in the directory of Gamayun. You may use `gamayun.conf-example` as an example.)
+
+The configuration file is read only once (when the server starts).
+
+The following configuration options are supported (in arbitrary order):
+
+* ![(TODO: not ready)](https://img.shields.io/badge/TODO-%28not_ready%29-001f3f.svg?style=plastic)
+
 ## Testing Gamayun
 
 [![(build testing status)](https://img.shields.io/travis/Mithgol/node-gamayun/master.svg?style=plastic)](https://travis-ci.org/Mithgol/node-gamayun)
