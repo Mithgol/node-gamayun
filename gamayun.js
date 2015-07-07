@@ -13,5 +13,18 @@ module.exports = function(optionsGamayun){
    var options = extend({}, defaultsGamayun, optionsGamayun);
    var setupGamayun = configReader(options);
 
+   setupGamayun.autumnUsers = setupGamayun.autumnUsers.map(function(nextUser){
+      var fullPath = path.resolve(__dirname, nextUser.path);
+      (function(){
+         try {
+            nextUser.autumn = require(fullPath);
+         } catch(e) {
+            nextUser = null;
+         }
+      })();
+   }).filter(function(nextAutumnUserDef){
+      return nextAutumnUserDef !== null;
+   });
+
    return app;
 };
