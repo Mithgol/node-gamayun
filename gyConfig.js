@@ -1,3 +1,4 @@
+var path = require('path');
 var simteconf = require('simteconf');
 
 module.exports = function(configOptions){
@@ -14,7 +15,10 @@ module.exports = function(configOptions){
 
       return {
          name: matches[1],
-         path: matches[2]
+         path: path.resolve(
+            path.dirname(configOptions.configFilePath),
+            matches[2]
+         )
       };
    }).filter(function(nextAutumnUserDef){
       return nextAutumnUserDef !== null;
