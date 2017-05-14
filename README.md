@@ -84,9 +84,9 @@ The `options_for_Gamayun` object that is given to Gamayun currently has only�
 
 The configuration file is read only once (when the server starts).
 
-The following configuration options are supported (in arbitrary order):
+The following configuration option is supported:
 
-* ![(TODO: not ready)](https://img.shields.io/badge/TODO-%28not_ready%29-001f3f.svg?style=plastic)
+* `AutumnUser`, followed by a (space-separated) username, followed by a (space-separated) filename or path (which is treated as relative to the `configFilePath`). This configuration line announces a username of a former Formspring's user and a location of former answers (exported from Formspring by the [Autumn](https://github.com/Mithgol/node-autumn) tool, beforehand). Several `AutumnUser` lines are supported (if a Gamayun server is intended to host exported answers of several former Formspring's users).
 
 ## Testing Gamayun
 
