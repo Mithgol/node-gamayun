@@ -10,7 +10,7 @@ This module is currently in an early phase of its development and thus does
 
 ## Goals
 
-**Long-term goal:** a server where people ask their questions and the user replies (like [Ask.fm](http://ask.fm/) or [Spring.me](http://spring.me/)). Instead of a centralized approach, this should be installable on personal servers (such as [Krylov's answers](http://krylov.cc/fansw.php)).
+**Long-term goal:** a server where people ask their questions and the user replies (like [Ask.fm](http://ask.fm/), or like former [Spring.me](http://spring.me/) before it was converted to a dating service). Instead of a centralized approach, this should be installable on personal servers (such as [Krylov's answers](http://krylov.cc/fansw.php), but with open source).
 
 **Short-term goal:** a server that is able to host answers imported by [the `autumn` package](https://github.com/Mithgol/node-autumn) from [Spring.me](http://spring.me/) servers.
 
